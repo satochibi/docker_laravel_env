@@ -10,6 +10,9 @@ https://core-tech.jp/blog/tech_log/4413/
 # php-apacheのサーバーに入る。(composerなどはここで実行)
 `docker compose exec php-apache /bin/bash`
 
+# Laravelプロジェクト新規作成
+`composer create-project laravel/laravel .`
+
 # databaseのサーバーに入る。
 `docker compose exec database /bin/bash`
 
