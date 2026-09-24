@@ -1,4 +1,4 @@
-FROM php:8.4-apache
+FROM php:8.2-apache
 
 RUN apt update \
     && apt install -y \
@@ -7,10 +7,15 @@ RUN apt update \
     libpq-dev \
     libzip-dev \
     libonig-dev \
+    libpng-dev \
+    libjpeg-dev \
+    libfreetype6-dev \
     zip \
     zlib1g-dev \
     && docker-php-ext-install \
     intl \
+    gd \
+    zip \
     opcache \
     pdo \
     pdo_mysql \
